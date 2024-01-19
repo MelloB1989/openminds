@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.hero {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+  height: 70vh;
+  width: 40vw;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textbox-1,
+.textbox-2,
+.textbox-3 {
+  position: absolute;
+  width: 30vw;
+  height: 20vh;
+  background-color: aqua;
+  border-radius: 20px;
+}
+
+.textbox-1 {
+  z-index: 5;
+  top: 9vh;
+  width: 20vw;
+}
+
+.textbox-3 {
+  bottom: 8vh;
+  width: 35vw;
+}
