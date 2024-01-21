@@ -1,6 +1,28 @@
+:root {
+  --lightblue: #efedfc;
+  --lightyellow: #fff8eb;
+  --lightgreen: #e6f6f0;
+  --blue: #5e48db;
+  --green: #04ad68;
+  --yellow: #f8ac12;
+  --darkblue: #020813;
+  --cyan: #2dc3f5;
+}
+
 body {
   margin: 0;
   overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  overflow-y: scroll;
+}
+
+.nav {
+  position: fixed;
+  height: 10vh;
+  top: 0;
+  width: 100vw;
+  background-color: var(--yellow);
+  z-index: 10;
 }
 
 .hero {
@@ -12,8 +34,9 @@ body {
 
 .container {
   position: relative;
+  top: -5vh;
   height: 70vh;
-  width: 40vw;
+  width: 60vw;
   justify-self: center;
   align-self: center;
   display: flex;
@@ -24,20 +47,174 @@ body {
 .textbox-1,
 .textbox-2,
 .textbox-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  width: 30vw;
+  width: 50vw;
   height: 20vh;
   background-color: aqua;
   border-radius: 20px;
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
 }
 
 .textbox-1 {
   z-index: 5;
-  top: 9vh;
-  width: 20vw;
+  top: 8vh;
+  width: 35vw;
+  background-color: var(--lightblue);
+  color: var(--blue);
+}
+
+.textbox-2 {
+  width: 50vw;
+  background-color: var(--lightyellow);
+  color: var(--yellow);
 }
 
 .textbox-3 {
   bottom: 8vh;
+  width: 45vw;
+  background-color: var(--lightgreen);
+  color: var(--green);
+}
+
+.discription {
+  height: 20vh;
+  width: 25vw;
+  position: absolute;
+  bottom: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+}
+
+.discription p {
+  text-align: center;
+  line-height: 20px;
+}
+
+.details {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: var(--blue);
+  height: 80vh;
+  width: 100vw;
+}
+
+.details .text {
+  position: absolute;
+  width: 20vw;
+  height: 40vh;
+  left: 5vw;
+  /* background-color: var(--yellow); */
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 3px solid black; */
+}
+
+.details .text p {
+  height: 30vh;
+  width: 15vw;
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+}
+
+.details .text p .mission {
+  color: rgb(248, 216, 157);
+}
+
+.details .box {
+  position: absolute;
+  width: 40vw;
+  height: 40vh;
+  right: 10vw;
+  background-color: var(--yellow);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid black;
+}
+
+.details .box p {
+  height: 30vh;
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.benifits {
+  position: relative;
+  height: 90vh;
+  width: 100vw;
+  background-color: var(--darkblue);
+  display: flex;
+}
+
+.benifits .text {
+  position: absolute;
+  width: 20vw;
+  height: 40vh;
+  left: 5vw;
+  top: 5vh;
+  color: white;
+  /* background-color: var(--yellow); */
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 3px solid black; */
+}
+
+.benifits .text p {
+  height: 30vh;
+  width: 15vw;
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+}
+
+.benifits .text p .students {
+  color: var(--cyan);
+}
+
+.benifits .box {
+  position: absolute;
+  width: 40vw;
+  height: 55vh;
+  right: 10vw;
+  top: 20vh;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 4px solid var(--cyan);
+  padding-inline: 2vw;
+  padding-block: 3vh;
+}
+
+.benifits .box p {
   width: 35vw;
+  display: flex;
+  justify-content: center;
+  color: var(--darkblue);
+  font-size: 15px;
+  line-height: 18px;
+  margin: 10px;
+  font-weight: bold;
 }
