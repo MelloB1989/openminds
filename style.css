@@ -442,5 +442,7 @@ body {
 @media (width < 768px) {
   .circle-out {
     display: none;
+    width: 0;
+    height: 0;
   }
 }
