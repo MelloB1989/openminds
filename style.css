@@ -438,3 +438,9 @@ body {
 /*     background: rgba(159, 255, 245, 1); */
 /*   } */
 /* } */
+
+@media (width < 776px) {
+  .circle-out {
+    display: none;
+  }
+}
