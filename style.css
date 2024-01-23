@@ -439,7 +439,7 @@ body {
 /*   } */
 /* } */
 
-@media (width < 776px) {
+@media (width < 768px) {
   .circle-out {
     display: none;
   }
