@@ -30,11 +30,12 @@ body {
   z-index: 10;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 
 .nav img {
   height: 300px;
-  transform: translateY(-75px);
+  transform: translateY(-110px);
   z-index: -1;
 }
 
@@ -119,14 +120,15 @@ body {
   display: flex;
   align-items: center;
   background-color: var(--bs-orange);
-  height: 80vh;
+  min-height: 80vh;
   width: 100vw;
+  justify-content: space-around;
 }
 
 .details .text {
-  position: absolute;
+  /* position: absolute;
   width: 20vw;
-  height: 40vh;
+  height: 40vh; */
   left: 5vw;
   /* background-color: var(--yellow); */
   border-radius: 20px;
@@ -134,14 +136,15 @@ body {
   align-items: center;
   justify-content: center;
   /* border: 3px solid black; */
+  margin-top: 5vh;
+  margin-bottom: auto;
 }
 
 .details .text p {
-  height: 30vh;
-  width: 15vw;
+  /* height: 30vh;
+  width: 15vw; */
   line-height: 60px;
   font-size: 50px;
-  color: --black;
   font-weight: bold;
 }
 
@@ -150,7 +153,7 @@ body {
 }
 
 .details .box {
-  position: absolute;
+  /* position: absolute; */
   width: 40vw;
   height: 40vh;
   right: 10vw;
@@ -160,11 +163,13 @@ body {
   align-items: center;
   justify-content: center;
   border: 4px solid var(--dark-orange);
+  margin-top: 10vh;
+  margin-bottom: auto;
 }
 
 .details .box p {
-  height: 30vh;
-  width: 30vw;
+  /* height: 30vh;
+  width: 30vw; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -172,6 +177,8 @@ body {
   font-weight: bold;
   font-size: 20px;
   line-height: 25px;
+  padding-inline: 2vw;
+  padding-block: 3vh;
 }
 
 .benifits {
@@ -255,6 +262,52 @@ body {
     width: 80vw;
     margin-inline: auto;
     margin-bottom: 10vh;
+  }
+
+  .details {
+    min-height: 90vh;
+    flex-direction: column;
+  }
+
+  .details .text {
+    margin-left: 10vw;
+    margin-right: auto;
+  }
+
+  .details .box {
+    width: 80vw;
+    margin-inline: auto;
+    margin-bottom: 10vh;
+  }
+
+  .textbox-1,
+  .textbox-2,
+  .textbox-3 {
+    font-size: 30px;
+    height: 16vh;
+  }
+
+  .hero-container {
+    width: 100vw;
+  }
+
+  .textbox-1 {
+    width: 75vw;
+    top: 13vh;
+  }
+
+  .textbox-2 {
+    width: 90vw;
+  }
+
+  .textbox-3 {
+    width: 75vw;
+    bottom: 13vh;
+  }
+
+  .discription {
+    transform: translateY(-80px);
+    width: 80vw;
   }
 }
 
