@@ -84,7 +84,7 @@ body {
 
 .textbox-1 {
   z-index: 5;
-  top: 8vh;
+  top: 6vh;
   width: 35vw;
   background-color: var(--bs-orange);
   color: var(--dark-orange);
@@ -97,7 +97,7 @@ body {
 }
 
 .textbox-3 {
-  bottom: 8vh;
+  bottom: 6vh;
   width: 45vw;
   background-color: var(--dark-orange);
   color: var(--lightyellow);
@@ -294,7 +294,7 @@ body {
 
   .textbox-1 {
     width: 75vw;
-    top: 13vh;
+    top: 11vh;
   }
 
   .textbox-2 {
@@ -303,7 +303,7 @@ body {
 
   .textbox-3 {
     width: 75vw;
-    bottom: 13vh;
+    bottom: 11vh;
   }
 
   .discription {
