@@ -25,10 +25,10 @@ body {
   overflow-y: scroll;
 }
 
-.nav {
+.om-nav {
   position: relative;
   height: 10vh;
-  top: 0;
+  top: 0 !important;
   width: 100vw;
   /* background-color: var(--yellow); */
   z-index: 10;
@@ -37,7 +37,7 @@ body {
   overflow: hidden;
 }
 
-.nav img {
+.om-nav img {
   height: 300px;
   transform: translateY(-110px);
   z-index: -1;
@@ -55,7 +55,7 @@ body {
 
 .hero-container {
   position: relative;
-  top: -5vh;
+  /* top: -5vh; */
   height: 70vh;
   width: 60vw;
   justify-self: center;
@@ -617,4 +617,36 @@ body {
 
 .cssbuttons-io-button:active .icon {
   transform: scale(0.95);
+}
+
+.svg {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+.svg-1 {
+  left: 6vw;
+  top: 15vh;
+}
+
+.svg-2 {
+  left: 6vw;
+  bottom: 15vh;
+}
+
+.svg-3 {
+  right: 6vw;
+  top: 15vh;
+}
+
+.svg-4 {
+  right: 6vw;
+  bottom: 15vh;
+}
+
+@media (width < 876px) {
+  .svg {
+    display: none;
+  }
 }
