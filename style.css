@@ -485,16 +485,12 @@ body {
 
 @media (width < 876px) {
   .template {
-    height: 125vh;
+    height: fit-content;
     flex-direction: column;
     padding-block: 24px;
     padding-inline: 15px;
     transform: translateX(2.5vw);
   }
-  .learn {
-    height: 130vh;
-  }
-
   .template .text {
     width: 100%;
   }
