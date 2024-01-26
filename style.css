@@ -13,6 +13,10 @@
   --dark-orange: #ff6000;
 }
 
+p {
+  font-family: "Inter", sans-serif !important;
+}
+
 body {
   margin: 0;
   overflow-x: hidden;
@@ -100,7 +104,7 @@ body {
 }
 
 .discription {
-  height: 20vh;
+  height: 40vh;
   width: 25vw;
   /* position: absolute; */
   bottom: 5vh;
@@ -108,6 +112,7 @@ body {
   justify-content: center;
   align-items: center;
   color: gray;
+  flex-direction: column;
 }
 
 .discription p {
@@ -120,7 +125,7 @@ body {
   display: flex;
   align-items: center;
   background-color: var(--bs-orange);
-  min-height: 80vh;
+  min-height: 70vh;
   width: 100vw;
   justify-content: space-around;
 }
@@ -145,7 +150,6 @@ body {
   width: 15vw; */
   line-height: 60px;
   font-size: 50px;
-  font-weight: bold;
 }
 
 .details .text p .mission {
@@ -174,7 +178,6 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
-  font-weight: bold;
   font-size: 20px;
   line-height: 25px;
   padding-inline: 2vw;
@@ -212,7 +215,6 @@ body {
   /* width: 15vw; */
   font-size: 50px;
   color: white;
-  font-weight: bold;
 }
 
 .benifits .text p .students {
@@ -245,7 +247,6 @@ body {
   font-size: 15px;
   line-height: 15px;
   margin: 10px;
-  font-weight: bold;
 }
 
 @media (width < 576px) {
@@ -445,4 +446,179 @@ body {
     width: 0;
     height: 0;
   }
+}
+
+.template {
+  height: 60vh;
+  width: 95vw;
+  display: flex;
+  padding: 65px;
+  background-color: var(--bs-orange);
+  border-radius: 35px;
+  margin-block: 30px;
+  transform: translateX(2.3vw);
+  border: 1px solid black;
+  gap: 3vw;
+}
+
+.template .text {
+  width: 60%;
+}
+
+.template p {
+  font-size: 20px;
+}
+
+.template .text span {
+  color: var(--dark-orange);
+}
+
+.template .image {
+  width: 40%;
+}
+
+.template img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+@media (width < 876px) {
+  .template {
+    height: 125vh;
+    flex-direction: column;
+    padding-block: 24px;
+    padding-inline: 15px;
+    transform: translateX(2.5vw);
+  }
+  .learn {
+    height: 130vh;
+  }
+
+  .template .text {
+    width: 100%;
+  }
+
+  .template .image {
+    width: 100%;
+  }
+}
+
+.whatsinside {
+  height: 60vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsinside .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 75%;
+  height: 50%;
+  gap: 1vw;
+  padding: 10px;
+}
+
+.whatsinside span {
+  color: var(--dark-orange);
+}
+
+.overview {
+  padding-inline: 20px;
+  padding-block: 5px;
+  border: 3px solid black;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  opacity: 0.5;
+}
+
+.custom-pointer {
+  height: fit-content;
+  width: fit-content;
+  margin-left: 20px;
+  position: relative;
+}
+
+.custom-pointer:before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  padding-inline: 7px;
+  background-color: var(--dark-orange);
+  content: ">"; /* You can use any character or image here */
+  color: black; /* Set the color you want */
+  font-size: 15px; /* Adjust the size as needed */
+  position: absolute;
+  left: -35px;
+  top: 0;
+}
+
+@media (width < 768px) {
+  .overview {
+    margin-bottom: 20px;
+  }
+  .whatsinside {
+    min-height: 80vh;
+  }
+  .whatsinside .grid {
+    height: 80%;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+.cssbuttons-io-button {
+  background: var(--dark-orange);
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+  background: var(--bs-orange);
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: black;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
 }
