@@ -27,7 +27,7 @@ body {
 
 .om-nav {
   position: relative;
-  height: 10vh;
+  height: 75px;
   top: 0 !important;
   width: 100vw;
   /* background-color: var(--yellow); */
@@ -621,28 +621,28 @@ body {
 
 .svg {
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
 }
 
 .svg-1 {
   left: 6vw;
-  top: 15vh;
+  top: 13vh;
 }
 
 .svg-2 {
   left: 6vw;
-  bottom: 15vh;
+  bottom: 13vh;
 }
 
 .svg-3 {
   right: 6vw;
-  top: 15vh;
+  top: 13vh;
 }
 
 .svg-4 {
   right: 6vw;
-  bottom: 15vh;
+  bottom: 13vh;
 }
 
 @media (width < 876px) {
